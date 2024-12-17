@@ -1,0 +1,1 @@
+Union-Find (DSU - Disjoint Set Union) — Data structure for grouping elements based on their relationships
