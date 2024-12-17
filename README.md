@@ -22,12 +22,3 @@ This repository contains notes and examples on Kotlin programming, focusing on k
 6. [Loops](./loops.md)
 7. [Null Safety](./null-safety.md)
 8. [Recursion](./recursion.md)
-
-## Introduction
-
-This section provides an overview of Kotlin and its features.
-
-## Collection Types
-
-This section contains notes and examples on Kotlin collection types. For detailed information, see [Collection Types](Collection-Types/collection-types.md).
-r4ě
