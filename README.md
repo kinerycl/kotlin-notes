@@ -1,13 +1,16 @@
 # Kotlin Notes
 
-This repository contains notes and concepts for learning Kotlin, starting from the basics and gradually expanding into more advanced topics.
+This repository contains notes and examples on Kotlin programming, focusing on key concepts, data types, and best practices. 
 
-## Topics Covered
+## Table of Contents
 
-### Basic Data Types
-- Overview of Kotlin’s primitive data types like `Int`, `Double`, `String`, `Boolean`, and more.
-- Understanding nullable types and type inference.
+1. [Introduction](#introduction)
+2. [Collection Types](#collection-types)
 
-### Lists and Mutable Lists
-- Immutable and mutable lists in Kotlin.
-- Basic operations such as accessing elements, iterating, and filtering lists.
+## Introduction
+
+This section provides an overview of Kotlin and its features.
+
+## Collection Types
+
+This section contains notes and examples on Kotlin collection types. For detailed information, see [Collection Types](Collection-Types/collection-types.md).
