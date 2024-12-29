@@ -14,13 +14,55 @@ In Kotlin, collection types are used to store and manage groups of objects. Thes
 | **Map (Read-Only)** | ❌                      | ❌               | ❌                   | `mapOf(1 to "A")`      |
 | **Pair**            | ❌                      | ❌               | ❌                   | `"apple" to "fruit"`    |
 
-## Collection Operations
+## Common Operations
 
 - **Add**: Adding elements to the collection (e.g., `add()`, `put()`).
 - **Remove**: Removing elements from the collection (e.g., `remove()`, `removeAt()`).
 - **Modify**: Modifying elements in the collection (e.g., `set()` in mutable lists).
 
 These operations are available for mutable collections like `MutableList`, `MutableSet`, and `MutableMap`, but not for immutable collections like `List`, `Set`, and `Map`.
+
+## Sorting Collections
+
+Kotlin provides several ways to sort collections:
+
+
+
+- **`sorted()`**: Returns a new list sorted in ascending order.
+    ```kotlin
+    val numbers = listOf(5, 3, 8, 1)
+    val sortedNumbers = numbers.sorted() // [1, 3, 5, 8]
+    ```
+
+- **`sortedDescending()`**: Returns a new list sorted in descending order.
+    ```kotlin
+    val numbers = listOf(5, 3, 8, 1)
+    val sortedNumbersDesc = numbers.sortedDescending() // [8, 5, 3, 1]
+    ```
+
+- **`sortedBy()`**: Sorts by a custom condition (e.g., by length of strings).
+    ```kotlin
+    val words = listOf("apple", "banana", "kiwi")
+    val sortedByLength = words.sortedBy { it.length } // [kiwi, apple, banana]
+    ```
+
+- **`sortedByDescending()`**: Sorts by a custom condition in descending order.
+    ```kotlin
+    val words = listOf("apple", "banana", "kiwi")
+    val sortedByLengthDesc = words.sortedByDescending { it.length } // [banana, apple, kiwi]
+    ```
+
+- **`sort()`**: Sorts a mutable list in place.
+    ```kotlin
+    val numbers = mutableListOf(5, 3, 8, 1)
+    numbers.sort() // [1, 3, 5, 8]
+    ```
+
+- **`sortDescending()`**: Sorts a mutable list in place in descending order.
+    ```kotlin
+    val numbers = mutableListOf(5, 3, 8, 1)
+    numbers.sortDescending() // [8, 5, 3, 1]
+    ```
 
 ## Conclusion
 
