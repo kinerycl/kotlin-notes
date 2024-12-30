@@ -19,14 +19,27 @@ In Kotlin, collection types are used to store and manage groups of objects. Thes
 - **Add**: Adding elements to the collection (e.g., `add()`, `put()`).
 - **Remove**: Removing elements from the collection (e.g., `remove()`, `removeAt()`).
 - **Modify**: Modifying elements in the collection (e.g., `set()` in mutable lists).
+- **Transform**: Transforming elements in the collection.
+  - **`map()`**: Transforms a collection by applying a transformation function to each element.
+      ```kotlin
+      val numbers = listOf(1, 2, 3)
+      val squaredNumbers = numbers.map { it * it } // [1, 4, 9]
+      ```
+  - **`mapIndexed()`**: Similar to `map()`, but also provides the index of each element along with the element itself.
+      ```kotlin
+      val numbers = listOf(10, 20, 30)
+      val indexedNumbers = numbers.mapIndexed { index, value -> "$index: $value" }
+      println(indexedNumbers) // ["0: 10", "1: 20", "2: 30"]
+      ```
+
+These operations are available for mutable collections like `MutableList`, `MutableSet`, and `MutableMap`, but not for immutable collections like `List`, `Set`, and `Map`.
+
 
 These operations are available for mutable collections like `MutableList`, `MutableSet`, and `MutableMap`, but not for immutable collections like `List`, `Set`, and `Map`.
 
 ## Sorting Collections
 
 Kotlin provides several ways to sort collections:
-
-
 
 - **`sorted()`**: Returns a new list sorted in ascending order.
     ```kotlin
